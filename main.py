@@ -13,9 +13,9 @@ def my_click():
     pg.moveTo(width,height)
     sleep(3)
     pg.click(pg.position())
-    sleep(5)
+    sleep(10)
     pg.click(1876,111)
-    sleep(1)
+    sleep(5)
     pg.click(1900,17)
 
 def main():
