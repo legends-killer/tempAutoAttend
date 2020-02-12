@@ -15,7 +15,7 @@ def my_click():
     pg.click(pg.position())
     sleep(10)
     pg.click(1876,111)
-    sleep(5)
+    sleep(10)
     pg.click(1900,17)
 
 def main():
