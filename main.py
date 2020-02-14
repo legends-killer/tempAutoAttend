@@ -16,14 +16,23 @@ def my_click():
     sleep(3)
     pg.click(pg.position())
     sleep(10)
-    pg.click(1876,111)
+    width, height = pg.size()
+    width = width*0.977
+    height = height*0.101
+    pg.moveTo(width,height)
+    pg.click(pg.position())
     sleep(10)
-    pg.click(1900,17)
+    width, height = pg.size()
+    width = width*0.99
+    height = height*0.017
+    pg.moveTo(width,height)
+    pg.click(pg.position())
 
 def main():
     os.system("start DingtalkLauncher.exe")
+    sleep(10)
     my_click()
-    sleep(5)
+    sleep(10)
 
 
 print("自动签到已启动,上次签到于：" + last_time)
